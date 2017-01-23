@@ -1,7 +1,7 @@
 {
-  "name": "spacegirl",
+  "name": "zerospace",
   "version": "0.1.0",
-  "description": "SpaceGirl is not a plaything",
+  "description": "Shell Bryson, Writer",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shellbryson/spacegirl-patternlibrary"
+    "url": "https://github.com/zerospace/zerospace-patternlibrary"
   },
   "author": "Shell Bryson",
   "license": "ISC",

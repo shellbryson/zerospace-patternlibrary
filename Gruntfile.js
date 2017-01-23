@@ -2,7 +2,7 @@ var remapify = require('remapify');
 var path = require('path');
 
 module.exports = function (grunt) {
-  var copyToExternalPath = '../../../site/fabric';
+  var copyToExternalPath = '../../../site/wordpress/wp-content/themes/zerospace/fabric';
   var scriptsPattern = ['patterns/**/*.js', 'components/**/*.js', 'assets/scripts/*.js'];
   var scriptsPatternMain = ['patterns/**/*.main.js', 'components/**/*.main.js', 'assets/scripts/**/*.main.js'];
   var stylesPattern = ['patterns/**/*.scss', 'components/**/*.scss', 'assets/styles/**/*.scss', '!**/*_scsslint_tmp*.scss'];
