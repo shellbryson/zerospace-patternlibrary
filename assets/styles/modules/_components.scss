@@ -1,0 +1,32 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _components.scss
+// *
+// *****************************************************************************
+
+// DO NOT REORDER THIS FILE
+
+// *****************************************************************************
+// * GLOBAL NAMES
+// * Unique global names based on namespace. Each component must have a name
+// * here.
+// *****************************************************************************
+
+// Common components and page furniture
+$c-splash: $namespace + "splash";
+$c-linkbar: $namespace + "linkbar";
+
+
+// *****************************************************************************
+// * IMPORT COMPONENT STYLES
+// * Note: Remember if you add anything in the section below to also create a
+// * matching global variable in the section above so that it can be referenced
+// * with the namespace intact.
+// *****************************************************************************
+
+// Page components
+@import "../../../components/splash/assets/styles/splash";
+@import "../../../components/linkbar/assets/styles/linkbar";
+

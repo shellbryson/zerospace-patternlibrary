@@ -1,0 +1,14 @@
+@mixin icon($font-lib, $content, $fontsize: 1em, $marginright: 5px) {
+  display: inline-block;
+  font-family: quote($font-lib);
+  speak: none;
+  text-decoration: inherit;
+
+  &:before {
+    margin-right: $marginright;
+    content: $content;
+    font-size: $fontsize;
+    font-family: quote($font-lib);
+    speak: none;
+  }
+}

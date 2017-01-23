@@ -1,0 +1,16 @@
+//Retina images - we will need this for things such as branding if high res screen support is required(Im guessing yes!)
+//Usage - @include image-retina(filename(i.e. logo), type(i.e. png), width(i.e. 200px), height(i.e. 100px));
+@mixin image-retina($file, $type, $width, $height) {
+  background-image: url($file + '.' + $type);
+  @media
+    (min--moz-device-pixel-ratio: 1.3),
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
+      & {
+        background-image: url($file + '@x2.' + $type);
+        background-size: $width $height;
+      }
+  }
+}

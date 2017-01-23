@@ -1,0 +1,22 @@
+//Breakpoints
+//available points by default are small, medium, large, x-large and xx-large - these will need adjusted once we start build.
+//We can also set our own in em's when using this mixin, but please document if you do so.
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 59.75em) { @content ; }
+  }
+  @else if $point == medium {
+    @media (min-width: 48.75em)  { @content ; }
+  }
+  @else if $point == small {
+    @media (min-width: 37.5em)  { @content ; }
+  }
+  @else {
+    @media (min-width: $point)  { @content ; }
+  }
+}
+
+@mixin breakpoint-max($point) {
+    @media (max-width: $point)  { @content ; }
+}

@@ -1,0 +1,67 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _linkbar.scss
+// *
+// *****************************************************************************
+
+.#{$c-linkbar} {
+
+  display: block;
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  text-align: center;
+
+  &__list {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  &__entry {
+    @include reset-list;
+    @include rem(margin, 0 20px 2px);
+    @include rem(padding, 6px);
+    @include rem(font-size, 13px);
+    display: block;
+    font-family: $fontTitles;
+    background-color: rgba($color-white, .5);
+    transition: $animation-speed;
+
+    @include breakpoint($breakpoint-xsmall) {
+      @include rem(width, 150px);
+      display: inline-block;
+      margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-white, .8);
+    }
+
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+
+      @include breakpoint($breakpoint-xsmall) {
+        border-radius: 6px 0 0 6px;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+
+      @include breakpoint($breakpoint-xsmall) {
+        border-radius: 0 6px 6px 0;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+
+}

@@ -1,0 +1,206 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _base.scss
+// *
+// *****************************************************************************
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: $fontPrimary;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+small {
+  font-size: 85%;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+  color: $color-black;
+}
+
+cite {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  @include rem(margin, 20px 0);
+  border: 0;
+  border-top: 1px solid $color-black;
+  border-bottom: 0;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  border-bottom: 2px dotted $color-black;
+  cursor: help;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+// *****************************
+// * LISTS
+// *****************************
+ul,
+ol {
+  @include rem(margin, 0 0 30px 0);
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint($breakpoint-small) {
+    @include rem(margin, 0 0 40px 0);
+  }
+
+  li {
+    @include rem(padding-left, 21px);
+    @include rem(margin-bottom, 15px);
+    @include rem(text-indent, -21px);
+    position: relative;
+    line-height: 1.4;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+ul {
+  li {
+    text-indent: 0;
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      content: "";
+      background-color: $color-black;
+    }
+  }
+}
+
+ol {
+  counter-reset: item;
+
+  > li ,
+  ol > li {
+    @include rem(padding-left, 28px);
+    position: relative;
+    text-indent: -10px;
+  }
+
+  > li:before,
+  ol > li:before {
+    @include rem(font-size, 18px);
+    @include rem(margin-left, -20px);
+    @include rem(padding-right, 10px);
+    content: counter(item) ". ";
+    font-weight: bold;
+    color: $color-black;
+    counter-increment: item;
+  }
+
+}
+
+dt {
+  @include rem(margin-bottom, 15px);
+  font-weight: bold;
+}
+
+dd {
+  @include rem(padding, 0 0 10px 0);
+  margin: 0;
+}
+
+dd + dt {
+  @include rem(margin-top, 15px);
+}
+
+
+
+/**************************
+* HELPERS
+***************************/
+.desktop-only {
+  display: none;
+
+  @include breakpoint($breakpoint-small) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  @include breakpoint($breakpoint-small) {
+    display: none;
+  }
+}
+
+
+.noscroll {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+
+.overlay.js-isVisible {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**************************
+* VISUALLY HIDDEN
+***************************/
+.sr-only {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "SpaceGirl",
+  "version": "0.1.0",
+  "authors": [
+    "Shell Bryson"
+  ],
+  "description": "Pattern Library Production Dependencies",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1"
+  }
+}

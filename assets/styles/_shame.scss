@@ -1,0 +1,58 @@
+/*
+ SHAME FILE
+
+ Sometimes we have to hack. It's just one of those things. We don't like to do it, but Browsers are fickle creatures.
+
+ This file can be used to include the ugly, the bad, and the hacks, but name and shame.
+*/
+
+/*
+  HACK DESCRIPTION, REASON AND **NAME OF AUTHOR**
+*/
+
+// Hiding parchment header as not needed right now - Jamie
+.parchment-preview-head {
+  display: none;
+}
+
+.parchment-preview-body {
+  margin: 0;
+}
+
+// *****************************************************************************
+// * Reset lists specifically for Fabric -- Sheru
+// *****************************************************************************
+.parchment-tab-box__tab {
+  @include reset-list;
+}
+
+.parchment-menu li,
+.parchment-menu ul ul li {
+  @include reset-list;
+}
+
+.parchment-menu__item {
+  @include reset-list;
+}
+
+.parchment-preview-body {
+  height: 100%;
+}
+
+.parchment-main {
+  height: 100%;
+}
+
+
+
+
+// *****************************************************************************
+// * Prevents some overlapping content when displayed in Fabric preview -- Sheru
+// *****************************************************************************
+.parchment-menu {
+  z-index: 99999;
+}
+
+.parchment-preview {
+
+}

@@ -1,0 +1,66 @@
+{
+  "links": [
+    {
+      "action": {
+        "url": "#",
+        "options": {
+          "linkStyle": "primary-link",
+          "srTitle": "Go to page.",
+          "ctxIcon": {
+            "icon": "arrow",
+            "hasTitle": false
+          }
+        },
+        "text": "Primary link with icon"
+      }
+    },
+    {
+      "action": {
+        "url": "#",
+        "options": {
+          "linkStyle": "primary",
+          "srTitle": "Go to page.",
+          "ctxIcon": {
+            "icon": "arrow",
+            "hasTitle": false
+          }
+        },
+        "text": "Primary link with icon and border"
+      }
+    },
+    {
+      "action": {
+        "url": "#",
+        "options": {
+          "linkStyle": "primary",
+          "srTitle": "Go to page."
+        },
+        "text": "Primary link with border and no icon"
+      }
+    },
+    {
+      "action": {
+        "url": "#",
+        "options": {
+          "linkStyle": "secondary",
+          "srTitle": "Go to page.",
+          "ctxIcon": {
+            "icon": "arrow",
+            "hasTitle": false
+          }
+        },
+        "text": "Secondary link with icon and fill"
+      }
+    },
+    {
+      "action": {
+        "url": "#",
+        "options": {
+          "linkStyle": "secondary",
+          "srTitle": "Go to page."
+        },
+        "text": "Secondary link with fill and no icon"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _splash.scss
+// *
+// *****************************************************************************
+
+.#{$c-splash} {
+
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-splash-bg-1;
+  background-image: radial-gradient(50% 50%, circle cover, $color-splash-bg-1, $color-splash-bg-2 33%);
+
+  &__wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__message {
+    display: block;
+    width: 50%;
+    margin: 4px auto;
+    font-size: 10vw;
+    font-family: $fontTitles;
+    color: $color-splash-text;
+    opacity: .7;
+    text-align: center;
+    text-shadow: 0 4px 0 lighten($color-splash-bg-1, 10%);
+
+    transition: $animation-speed;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      margin-top: 8px;
+      margin-bottom: 0;
+      text-shadow: 0 2px 0 lighten($color-splash-bg-1, 20%);
+    }
+  }
+
+  &__subtext {
+    margin: 0 auto;
+    font-size: 4vw;
+    font-family: $fontTitles;
+    color: $color-splash-text;
+    opacity: .7;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+}
+
+// Animation
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadein ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fadein--one {
+  animation-delay: .2s;
+}
+
+.fadein--two {
+  animation-delay: .3s;
+}

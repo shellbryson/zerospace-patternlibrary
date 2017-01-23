@@ -1,0 +1,17 @@
+{
+  "links": [
+    {
+      "url": "https://shellbryson.com",
+      "text": "shellbryson.com",
+      "title": "Shell Bryson"
+    },{
+      "url": "https://sheru.uk",
+      "text": "sheru.uk",
+      "title": "Development Blog"
+    },{
+      "url": "https://github.com/shellbryson/spacegirl-patternlibrary",
+      "text": "on git",
+      "title": "This project on GitHub"
+    }
+  ]
+}

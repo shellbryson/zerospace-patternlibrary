@@ -1,0 +1,6 @@
+@mixin font($family: 'Arial', $fontsize: 1em, $line-height: 1em) {
+  @include font-smoothing;
+  @include rem(font-size, $fontsize);
+  @include rem(line-height, $line-height);
+  font-family: $family;
+}

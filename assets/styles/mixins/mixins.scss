@@ -1,0 +1,57 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _mixins.scss
+// *
+// * @description: Helpers for SCSS transpile
+// *
+// *****************************************************************************
+
+
+
+// *****************************************************************************
+// * HELPERS
+// *
+// *****************************************************************************
+
+// REM - with pixel fallback
+$base-font-size: 16px;
+$rem-with-px-fallbacks: true;
+@import "rem";
+
+// Opacity - cross browser opacity
+@import "opacity";
+
+// Font
+@import "icon";
+
+// Retina images
+@import "retina-images";
+
+// Clearfix - no brainer
+@import "clearfix";
+
+// Truncate text
+@import "text-truncate";
+
+// Breakpoints - Possibly need this depending on the amount of breakpoints we need
+@import "breakpoints";
+
+// Fonts - fonts to be purchased, will add this later.
+@import "font";
+
+// Transform - transform CSS properties.
+@import "transform";
+
+// Font smoothing
+@import "font-smoothing";
+
+// Help smooth out UX issues caused by user drag-selecting elements
+@import "user-select";
+
+// Clean up Lists
+@import "list";
+
+//removed default list styles
+@import "reset-list";

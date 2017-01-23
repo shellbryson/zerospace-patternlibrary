@@ -1,0 +1,16 @@
+@mixin badge(
+  $width: 100px,
+  $height: 100px,
+  $borderColor: $color-grey-border,
+  $borderSize: 10px,
+  $fill: $color-grey-border
+) {
+  @include rem(height, $height);
+  @include rem(width, $width);
+  @include rem(line-height, $height);
+  vertical-align: middle;
+
+  background-color: $fill;
+  border: $borderSize solid $borderColor;
+  border-radius: 50%;
+}

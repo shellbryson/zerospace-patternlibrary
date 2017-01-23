@@ -1,0 +1,56 @@
+// *****************************************************************************
+// * Pattern Library
+// *****************************************************************************
+// *
+// * @name: _vars.scss
+// *
+// * Global variables
+// *
+// *****************************************************************************
+
+
+
+// *****************************************************************************
+// * GLOBAL CSS NAMESPACE
+// * Example: `namespace-classname` or blank if none
+// *****************************************************************************
+
+$namespace: "sg-";
+
+
+
+// *****************************************************************************
+// * PATHS
+// *
+// *****************************************************************************
+
+$config-font-path: "../fonts/";
+$images: "../images";
+$svg-icons: "../icons/svg";
+
+
+
+// *****************************************************************************
+// * ANIMATION
+// * General tip: Animations should generally be on "activation state", that is
+// * when an element is first shown or modified. If an element is being hidden
+// * this should be immediate (no delay or animation).
+// *****************************************************************************
+
+// General interactions, snappy and clean:
+$animation-speed: 0.2s;
+
+// Slower animations where we want more obvious movement
+$animation-speed-slow: 0.4s;
+
+
+
+// *****************************************************************************
+// * LAYOUT
+// *
+// *****************************************************************************
+
+$breakpoint-xsmall: 600px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1600px;
